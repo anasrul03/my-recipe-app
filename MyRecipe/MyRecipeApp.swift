@@ -8,6 +8,8 @@
 import SwiftUI
 import SwiftData
 import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 
 
