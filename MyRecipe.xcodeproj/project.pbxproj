@@ -79,6 +79,8 @@
 		7A1028E42C6CF3CA00735340 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A1028E32C6CF3CA00735340 /* GoogleService-Info.plist */; };
 		7A1028E52C6CF3CA00735340 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A1028E32C6CF3CA00735340 /* GoogleService-Info.plist */; };
 		7A1028E62C6CF3CA00735340 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A1028E32C6CF3CA00735340 /* GoogleService-Info.plist */; };
+		7AD47BF72C74E52400024D0C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7AD47BF62C74E52400024D0C /* FirebaseAuth */; };
+		7AD47BF92C74E52C00024D0C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7AD47BF82C74E52C00024D0C /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A1028E22C6CF2EA00735340 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				7AD47BF72C74E52400024D0C /* FirebaseAuth in Frameworks */,
+				7AD47BF92C74E52C00024D0C /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +171,7 @@
 				7A10286C2C6CE4A000735340 /* MyRecipeTests */,
 				7A1028762C6CE4A000735340 /* MyRecipeUITests */,
 				7A1028582C6CE49E00735340 /* Products */,
+				7AD47BF52C74E52400024D0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +286,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		7AD47BF52C74E52400024D0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,6 +311,8 @@
 			name = MyRecipe;
 			packageProductDependencies = (
 				7A1028E12C6CF2EA00735340 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				7AD47BF62C74E52400024D0C /* FirebaseAuth */,
+				7AD47BF82C74E52C00024D0C /* FirebaseFirestore */,
 			);
 			productName = MyRecipe;
 			productReference = 7A1028572C6CE49E00735340 /* MyRecipe.app */;
@@ -659,6 +673,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anasrul.MyRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -688,6 +703,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anasrul.MyRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -829,6 +845,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7A1028E02C6CF2EA00735340 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		7AD47BF62C74E52400024D0C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A1028E02C6CF2EA00735340 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7AD47BF82C74E52C00024D0C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A1028E02C6CF2EA00735340 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
